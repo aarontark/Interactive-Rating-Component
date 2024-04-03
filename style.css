@@ -4,7 +4,7 @@
     --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
-
+    --orange: hsl(25, 97%, 53%);
 }
 
 *,
@@ -24,10 +24,6 @@ body {
     font-family: "Overpass", sans-serif;
     background-color: var(--very-dark-blue);
     color: var(--White);
-}
-
-button {
-    font-family: "Overpass", sans-serif;
 }
 
 .content-container {
@@ -63,6 +59,38 @@ button {
     color: #ffffff7e;
     font-size: .875rem;
     line-height: 1.25rem;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox {
+    appearance: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: hsl(213, 20%, 24%);
+}
+
+
+.number {
+    font-size: .8rem;
+    position: relative;
+    top: 14px;
+    right: 24px;
+    width: 0;
+}
+
+.checkbox:checked {
+    background-color: var(--orange);
 }
 
 .confirmation-container {
