@@ -59,6 +59,12 @@ button {
     padding: 1rem 0;
 }
 
+.content-para {
+    color: #ffffff7e;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
 .confirmation-container {
     display: none;
 }
