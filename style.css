@@ -19,15 +19,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     font-family: "Overpass", sans-serif;
     background-color: var(--very-dark-blue);
+    color: var(--White);
 }
 
 button {
     font-family: "Overpass", sans-serif;
 }
 
+.content-container {
+    background-color: var(--dark-blue);
+    width: 87.5%;
+    max-width: 20.5rem;
+    padding: 1.5rem;
+}
+
 .confirmation-container {
     display: none;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1rem;
 }
