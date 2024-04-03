@@ -27,21 +27,23 @@ body {
 }
 
 .content-container {
-    background-color: var(--dark-blue);
+    background-color: hsl(215, 25%, 15%);
     width: 87.5%;
     max-width: 25rem;
     padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 .icon-container {
     display: flex;
     justify-content: start;
     align-items: center;
+    padding-bottom: .25rem;
 }
 
 .icon-border {
-    background-color: hsl(213, 20%, 24%);
-    padding: .75rem;
+    background-color: hsl(215, 19%, 19%);
+    padding: .8rem;
     display: flex;
     justify-content: center;
     border-radius: 50%;
@@ -58,13 +60,13 @@ body {
 .content-para {
     color: #ffffff7e;
     font-size: .875rem;
-    line-height: 1.25rem;
+    line-height: 1.35rem;
 }
 
 .checkbox-container {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .checkbox-wrapper {
@@ -74,23 +76,39 @@ body {
 
 .checkbox {
     appearance: none;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.6rem;
+    width: 2.6rem;
     border-radius: 50%;
-    background-color: hsl(213, 20%, 24%);
+    background-color: hsl(215, 19%, 19%);
 }
 
-
 .number {
-    font-size: .8rem;
+    font-size: .9rem;
     position: relative;
     top: 14px;
-    right: 24px;
+    right: 25px;
     width: 0;
+    color: #ffffff91;
 }
 
 .checkbox:checked {
     background-color: var(--orange);
+}
+
+.submit {
+    width: 100%;
+    color: #ffffffd2;
+    background-color: var(--orange);
+    border: none;
+    font-size: .825rem;
+    letter-spacing: .15rem;
+    padding: .95rem 0;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: hsla(25, 97%, 53%, 0.76);
 }
 
 .confirmation-container {
@@ -99,6 +117,6 @@ body {
 
 .attribution {
     position: absolute;
-    bottom: 1rem;
+    bottom: .5rem;
     font-size: 1rem;
 }
