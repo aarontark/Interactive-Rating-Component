@@ -34,6 +34,11 @@ body {
     border-radius: 1rem;
 }
 
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .icon-container {
     display: flex;
     justify-content: start;
@@ -111,12 +116,48 @@ body {
     background-color: hsla(25, 97%, 53%, 0.76);
 }
 
-.confirmation-container {
+/* confirmation section */
+
+.confirmation-section {
     display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.confirmation-section > * {
+    width: 100%;
+}
+
+.image-container {
+    padding-top: .75rem;
+}
+
+.img {
+    width: 52%;
+}
+
+.display-container {
+    background-color: hsl(215, 19%, 19%);
+    font-size: .9rem;
+    border-radius: 1rem;
+    padding: .45rem 0;
+    color: hsl(25, 74%, 57%);
+    width: 60%;
+    margin: 1rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.submission-para {
+    font-size: .9em;
+    line-height: 1.5rem;
+    padding: .75rem 0;
+    color: #ffffff7a;
 }
 
 .attribution {
     position: absolute;
     bottom: .5rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
