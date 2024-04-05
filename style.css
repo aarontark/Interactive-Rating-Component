@@ -26,6 +26,10 @@ body {
     color: var(--White);
 }
 
+input, button, label {
+    cursor: pointer;
+}
+
 .content-container {
     background-color: hsl(215, 25%, 15%);
     width: 87.5%;
@@ -159,5 +163,79 @@ body {
 .attribution {
     position: absolute;
     bottom: .5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 428px) {
+    .content-container {
+        width: 100%;
+        max-width: 26rem;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+    
+    .icon-border {
+        padding: 1rem;
+    }
+
+    .icon {
+        width: 1rem;
+    }
+
+    .content-title {
+        font-size: 1.75rem;
+        padding: 2rem 0 .75rem 0;
+    }
+
+    .content-para {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    } 
+
+    .checkbox {
+        height: 3.25rem;
+        width: 3.25rem;
+    }
+
+    .number {
+        top: 18px;
+        right: 30px;
+        font-size: 1rem;
+    }
+
+    .submit {
+        font-size: .95rem;
+    }
+
+    .checkbox-container {
+        padding: 1.5rem 0 2rem 0;
+    }
+
+    .confirmation-section > * {
+        width: 100%;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        width: 45%;
+    }
+
+    .display-container {
+        width: 55%;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .submission-title {
+        font-size: 1.75rem;
+    }
+
+    .submission-para {
+        font-size: .975rem;
+    }
+
 }
