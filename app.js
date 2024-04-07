@@ -1,11 +1,10 @@
-let submitBtn = document.querySelector('.submit');
+let pageForm = document.querySelector('.page-form');
 let radioBtns = document.querySelectorAll('.checkbox')
-let radioLabels = document.querySelectorAll('.number')
 let selectionDisplay = document.querySelector('.selection-display');
 let mainSection = document.querySelector('.main-section');
 let confirmation = document.querySelector('.confirmation-section');
 
-submitBtn.addEventListener('click', () => {
+pageForm.addEventListener('submit', () => {
     for (const radio of radioBtns) {
         if (radio.checked) {
             mainSection.style.display = 'none';
